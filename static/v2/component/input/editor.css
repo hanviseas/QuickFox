@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+/* ------ Editor组件样式 Begin ------ */
+
+.container {
+    height: 35px;
+    line-height: 35px;
+}
+
+.container>div {
+    display: inline-block;
+    margin-top: 2px;
+    vertical-align: middle;
+}
+
+.container>div img {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* ------ Editor组件样式 End ------ */

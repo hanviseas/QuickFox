@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+/* ------ Load组件样式 Begin ------ */
+
+.loading {
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.loading>span::before {
+    display: inline-block;
+    margin: -2px 5px 0px -3px;
+    content: url(/static/img/v2/public/loading2.svg);
+    vertical-align: middle;
+}
+
+/* ------ Load组件样式 End ------ */

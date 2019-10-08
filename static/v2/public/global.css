@@ -1,0 +1,114 @@
+@CHARSET "UTF-8";
+/* ------ 公用元素样式 Begin ------ */
+
+:global(*) {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+:global(html) {
+    min-width: 1920px;
+}
+
+:global(body) {
+    position: relative;
+    background-color: #eaeff3;
+}
+
+:global(iframe) {
+    border: 0px;
+}
+
+:global(div) {
+    position: relative;
+}
+
+:global(span) {
+    color: #696969;
+    font-size: 14px;
+    font-family: Microsoft Yahei, SimHei, Arial;
+}
+
+:global(a) {
+    text-decoration: none;
+}
+
+:global(a>span) {
+    color: #696969;
+}
+
+:global(a:hover>span) {
+    color: #35b1f1;
+}
+
+:global(img) {
+    border: 0px;
+}
+
+:global(li) {
+    list-style-type: none;
+}
+
+:global(input) {
+    color: #6a6a6a;
+    font-size: 14px;
+    font-family: Microsoft Yahei, SimHei, Arial;
+    border: none;
+    outline: none;
+}
+
+:global(select) {
+    color: #6a6a6a;
+    font-size: 14px;
+    font-family: Microsoft Yahei, SimHei, Arial;
+    border: none;
+}
+
+:global(textarea) {
+    color: #6a6a6a;
+    font-size: 14px;
+    font-family: Microsoft Yahei, SimHei, Arial;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+:global(table) {
+    border-collapse: collapse;
+}
+
+:global(table span) {
+    margin: 0px 12px 0px 12px;
+}
+
+:global(::-webkit-scrollbar) {
+    width: 8px;
+}
+
+:global(::-webkit-scrollbar-track) {
+    background-color: #eeeeee;
+    border-radius: 2px;
+}
+
+:global(::-webkit-scrollbar-thumb) {
+    background-color: #cecece;
+    border-radius: 2px;
+}
+
+/* ------ 公用元素样式 End ------ */
+
+/* ------ 通用样式 Begin ------ */
+
+.clear {
+    clear: both;
+}
+
+.autoHidden {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+/* ------ 通用样式 End ------ */

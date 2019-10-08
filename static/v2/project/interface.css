@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+/* ------ 接口用例样式 Begin ------ */
+
+.filter>div {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.filter>.searcher {
+    float: right;
+    margin-right: 0px;
+}
+
+@media screen and (max-width: 1500px) {
+    .filter>.searcher {
+        float: left;
+    }
+}
+
+/* ------ 接口用例样式 End ------ */

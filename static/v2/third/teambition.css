@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+/* ------ Teambition登录页面样式 Begin ------ */
+
+.board {
+    position: fixed;
+    width: 520px;
+    height: 500px;
+    top: 45%;
+    left: 50%;
+    margin-top: -260px;
+    margin-left: -260px;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 1px #cecece;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px #e2e2e2;
+}
+
+.board>div {
+    padding: 60px;
+}
+
+.board>div>div {
+    height: 70px;
+}
+
+.board>div>div>div {
+    display: inline-box;
+}
+
+.board>div>div>a>span {
+    color: #35b1f1;
+}
+
+.board>div>.errorMessage {
+    position: absolute;
+    width: 400px;
+    height: 15px;
+    top: 165px;
+    line-height: 15px;
+}
+
+.board>div>.errorMessage>span {
+    color: #dd1c5d;
+}
+
+.board>div>.errorMessage>span::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-error-message.png");
+    vertical-align: middle;
+}
+
+.loginButton {
+    height: 40px;
+}
+
+/* ------ 登录页面样式 End ------ */

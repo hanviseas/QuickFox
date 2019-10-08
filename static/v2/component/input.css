@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+/* ------ Input组件样式 Begin ------ */
+
+.title {
+    line-height: 40px;
+}
+
+.container {
+    border: solid 1px #dcdcdc;
+}
+
+.container.focused {
+    border-color: #35b1f1;
+}
+
+.container.required {
+    border-color: #e38b8b;
+}
+
+.container.disabled {
+    background-color: #f1f1f1;
+}
+
+.container.disabled>input {
+    background-color: #f1f1f1;
+}
+
+/* ------ Input组件样式 End ------ */

@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+/* ------ 环境列表样式 Begin ------ */
+
+.newEnvironment {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.newEnvironment>span {
+    color: #35b1f1;
+    font-weight: bold;
+}
+
+.newEnvironment>span::before {
+    margin-right: 10px;
+    content: url(/static/img/v2/public/icon-add.png);
+    vertical-align: middle;
+}
+
+.environment {
+    height: 35px;
+    margin-top: -1px;
+    cursor: pointer;
+    line-height: 35px;
+    border: solid 1px #dcdcdc;
+}
+
+.environment.focused>div>span {
+    color: #35b1f1;
+}
+
+.environment.focused>div>div>span {
+    color: #35b1f1;
+}
+
+.environment.focused .optionCol {
+    display: block;
+}
+
+.environment.new>div>span {
+    color: #f1a835;
+}
+
+.environment.new>div>div>span {
+    color: #f1a835;
+}
+
+.environment.locked {
+    height: 36px;
+    background-color: #f1f1f1;
+}
+
+.environment.locked>.nameCol>span::after {
+    margin-left: 5px;
+    content: url(/static/img/v2/public/icon-lock.png);
+    vertical-align: middle;
+}
+
+.environment>div {
+    float: left;
+}
+
+.environment>div>span {
+    padding: 0px 15px;
+}
+
+.environment>.idCol {
+    width: 10%;
+}
+
+.environment>.nameCol {
+    width: 80%;
+}
+
+.environment>.optionCol {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #ffffff;
+}
+
+.environment>.optionCol>div {
+    display: inline-block;
+    padding: 9px 10px;
+    vertical-align: middle;
+}
+
+.environment>.optionCol>div img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.head {
+    height: 40px;
+    line-height: 40px;
+    background-color: #35b1f1;
+}
+
+.head>div>span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.head .arrowUp>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-up.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+.head .arrowDown>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-down.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+/* ------ 环境列表样式 End ------ */

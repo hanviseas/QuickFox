@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+/* ------ Textarea组件样式 Begin ------ */
+
+.container {
+    line-height: 30px;
+    border: solid 1px #dcdcdc;
+}
+
+.container.focused {
+    border-color: #35b1f1;
+}
+
+.container.required {
+    border-color: #e38b8b;
+}
+
+.container.disabled {
+    background-color: #f1f1f1;
+}
+
+.container.disabled>textarea {
+    background-color: #f1f1f1;
+}
+
+/* ------ Textarea组件样式 End ------ */

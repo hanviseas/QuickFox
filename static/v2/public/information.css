@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+/* ------ Information组件样式 Begin ------ */
+
+.board {
+    position: fixed;
+    width: 500px;
+    z-index: 999;
+    top: 10px;
+    left: 50%;
+    margin-left: -250px;
+}
+
+.board>div {
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 30px;
+    background: rgba(43, 51, 62, 0.8);
+    border: solid 1px #dcdcdc;
+}
+
+.board>div>span {
+    color: #ffffff;
+}
+
+.board>div.success>span::before {
+    margin-right: 10px;
+    content: url(/static/img/v2/public/icon-success.png);
+    vertical-align: middle;
+}
+
+.board>div.error>span::before {
+    margin-right: 10px;
+    content: url(/static/img/v2/public/icon-error.png);
+    vertical-align: middle;
+}
+
+.board>div>img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+/* ------ Information组件样式 End ------ */

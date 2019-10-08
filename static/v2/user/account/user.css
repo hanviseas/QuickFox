@@ -1,0 +1,140 @@
+@CHARSET "UTF-8";
+/* ------ 用户列表样式 Begin ------ */
+
+.newUser {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.newUser>span {
+    color: #35b1f1;
+    font-weight: bold;
+}
+
+.newUser>span::before {
+    margin-right: 10px;
+    content: url(/static/img/v2/public/icon-add.png);
+    vertical-align: middle;
+}
+
+.user {
+    height: 35px;
+    margin-top: -1px;
+    cursor: pointer;
+    line-height: 35px;
+    border: solid 1px #dcdcdc;
+}
+
+.user.focused>div>span {
+    color: #35b1f1;
+}
+
+.user.focused>div>div>span {
+    color: #35b1f1;
+}
+
+.user.focused .optionCol {
+    display: block;
+}
+
+.user.new>div>span {
+    color: #f1a835;
+}
+
+.user.new>div>div>span {
+    color: #f1a835;
+}
+
+.user>div {
+    float: left;
+}
+
+.user>div>span {
+    padding: 0px 15px;
+}
+
+.user>.idCol {
+    width: 10%;
+}
+
+.user>.nameCol {
+    width: 20%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.user>.nameCol>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user>.nameCol>img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+    border: solid 1px #cecece;
+    border-radius: 50%;
+}
+
+.user>.nameCol>div {
+    width: calc(100% - 40px);
+}
+
+.user>.cardCol {
+    width: 20%;
+}
+
+.user>.roleCol {
+    width: 15%;
+}
+
+.user>.emailCol {
+    width: 15%;
+}
+
+.user>.optionCol {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #ffffff;
+}
+
+.user>.optionCol>div {
+    display: inline-block;
+    padding: 9px 10px;
+    vertical-align: middle;
+}
+
+.user>.optionCol>div img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.head {
+    height: 40px;
+    line-height: 40px;
+    background-color: #35b1f1;
+}
+
+.head>div>span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.head .arrowUp>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-up.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+.head .arrowDown>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-down.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+/* ------ 用户列表样式 End ------ */

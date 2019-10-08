@@ -1,0 +1,82 @@
+@CHARSET "UTF-8";
+/* ------ Window组件样式 Begin ------ */
+
+.window {
+    position: fixed;
+    z-index: 900;
+    top: 45%;
+    left: 50%;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 1px #dcdcdc;
+}
+
+.window.isolateLayout>.content {
+    border-bottom: solid 1px #dcdcdc;
+}
+
+.window.level2 {
+    z-index: 1900;
+}
+
+.window.level3 {
+    z-index: 2900;
+}
+
+.lockLayer {
+    position: fixed;
+    z-index: 500;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    cursor: pointer;
+    background-color: #232323;
+    opacity: 0.7;
+}
+
+.lockLayer.level2 {
+    z-index: 1500;
+}
+
+.lockLayer.level3 {
+    z-index: 2500;
+}
+
+.title {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: solid 1px #dcdcdc;
+}
+
+.title>span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.content {
+    overflow: auto;
+}
+
+.content>div {
+    margin: 30px 0px;
+}
+
+.handler {
+    margin: 20px;
+}
+
+.handler>div {
+    display: inline-block;
+    margin: 0px 10px;
+    vertical-align: middle;
+}
+
+/* ------ Window组件样式 End ------ */

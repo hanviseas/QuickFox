@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+/* ------ 用例窗口样式 Begin ------ */
+
+.requestOption {
+    height: 30px;
+    text-align: center;
+}
+
+.requestOption>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* ------ 用例窗口样式 End ------ */

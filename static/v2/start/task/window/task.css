@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+/* ------ 任务窗口样式 Begin ------ */
+
+.runtimeOption {
+    height: 30px;
+    text-align: center;
+}
+
+.runtimeOption>div {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.runtimeOption>div:nth-child(2) {
+    margin-right: 45px;
+}
+
+/* ------ 任务窗口样式 End ------ */

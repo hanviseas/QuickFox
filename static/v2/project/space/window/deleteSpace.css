@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+/* ------ 删除空间窗口样式 Begin ------ */
+
+.notice {
+    text-align: center;
+    line-height: 30px;
+}
+
+.notice>span {
+    font-size: 16px;
+}
+
+/* ------ 删除空间窗口样式 End ------ */

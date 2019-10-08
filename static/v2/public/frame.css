@@ -1,0 +1,292 @@
+@CHARSET "UTF-8";
+/* ------ 蒙层样式 Begin ------ */
+
+.mask {
+    display: none;
+    opacity: 0.7;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    background-color: #232323;
+}
+
+/* ------ 蒙层样式 End ------ */
+
+/* ------ 菜单样式 Begin ------ */
+
+.menu {
+    position: fixed;
+    width: 200px;
+    z-index: 5;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #2b333e;
+}
+
+.menu span {
+    color: #ffffff;
+}
+
+.menu>.head {
+    height: 80px;
+    background-color: #333d49;
+    border-bottom: solid 1px #252f3b;
+    box-shadow: 0px 0px 2px 0px #252f3b;
+}
+
+.menu>.head>img {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.menu>.head>img:first-child {
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.menu>.body .title {
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.menu>.body .title>span {
+    padding-left: 30px;
+    color: #9ea6b1;
+}
+
+.menu>.body .title.opened::after {
+    margin-left: 10px;
+    content: url("/static/img/v2/public/icon-opened.png");
+}
+
+.menu>.body .title.closed::after {
+    margin-left: 10px;
+    content: url("/static/img/v2/public/icon-closed.png");
+}
+
+.menu>.body ul.closed {
+    display: none;
+}
+
+.menu>.body li {
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.menu>.body li>div {
+    position: absolute;
+    width: 0px;
+    height: 40px;
+    left: 0px;
+    background-color: #35b1f1;
+}
+
+.menu>.body li>span {
+    padding-left: 30px;
+}
+
+.menu>.body li.selected {
+    background-color: #222834;
+}
+
+.menu>.body li.selected>div {
+    width: 5px;
+}
+
+.menu>.body .iconNew::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-new.png");
+    vertical-align: middle;
+}
+
+.menu>.body .iconTask::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-task.png");
+    vertical-align: middle;
+}
+
+.menu>.body .iconReport::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-report.png");
+    vertical-align: middle;
+}
+
+.menu>.body .iconEnvironment::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-environment.png");
+    vertical-align: middle;
+}
+
+.menu>.body .iconParam::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-param.png");
+    vertical-align: middle;
+}
+
+.menu>.body .iconSpace::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-space.png");
+    vertical-align: middle;
+}
+
+.menu>.body .iconInterface::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-interface.png");
+    vertical-align: middle;
+}
+
+.menu>.body .iconDocument::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-document.png");
+    vertical-align: middle;
+}
+
+.menu>.body .iconAccount::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-account.png");
+    vertical-align: middle;
+}
+
+.menu>.body .iconPermission::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-permission.png");
+    vertical-align: middle;
+}
+
+.menu>.body .iconSet::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-set.png");
+    vertical-align: middle;
+}
+
+.menu>.body .iconApplication::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-application.png");
+    vertical-align: middle;
+}
+
+.menu>.body .iconLog::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-log.png");
+    vertical-align: middle;
+}
+
+.menu>.body .iconInfo::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-info.png");
+    vertical-align: middle;
+}
+
+.menu>.profile {
+    position: fixed;
+    width: 200px;
+    height: 80px;
+    z-index: 10;
+    left: 0px;
+    bottom: 0px;
+    background-color: #333d49;
+}
+
+.menu>.profile>div {
+    float: left;
+}
+
+.menu>.profile>.avatar {
+    width: 40px;
+    height: 40px;
+    margin: 20px 10px 20px 15px;
+    cursor: pointer;
+}
+
+.menu>.profile>.avatar img {
+    width: 40px;
+    height: 40px;
+    border: solid 1px #dcdcdc;
+    border-radius: 50%;
+}
+
+.menu>.profile>.title {
+    width: 80px;
+    height: 25px;
+    margin: 15px 10px 0px 10px;
+    line-height: 25px;
+}
+
+.menu>.profile>.name {
+    width: 80px;
+    height: 25px;
+    margin-left: 10px;
+    line-height: 25px;
+}
+
+/* ------ 菜单样式 End ------ */
+
+/* ------ 头部样式 Begin ------ */
+
+.header {
+    position: fixed;
+    height: 80px;
+    z-index: 5;
+    top: 0px;
+    right: 0px;
+    left: 200px;
+    line-height: 80px;
+    background-color: #ffffff;
+    border-bottom: solid 1px #dcdcdc;
+    box-shadow: 0px 0px 2px 0px #dcdcdc;
+}
+
+.header>div:first-child {
+    float: left;
+
+}
+
+.header>div:last-child {
+    float: right;
+    margin-right: 15px;
+}
+
+.header>div:last-child>div {
+    display: inline-block;
+    margin: 25px 30px 0px 0px;
+    cursor: pointer;
+}
+
+.header>div>span {
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+/* ------ 头部样式 End ------ */
+
+/* ------ 面板样式 Begin ------ */
+
+.board {
+    position: fixed;
+    z-index: 5;
+    overflow: auto;
+    top: 80px;
+    right: 0px;
+    bottom: 0px;
+    left: 200px;
+    margin: 30px;
+    background-color: #ffffff;
+    border: solid 1px #dcdcdc;
+}
+
+.board>div {
+    margin: 60px;
+}
+
+.board.scrollHidden {
+    overflow: hidden;
+}
+
+/* ------ 面板样式 End ------ */

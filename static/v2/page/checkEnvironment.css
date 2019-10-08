@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+/* ------ 环境检查页面样式 Begin ------ */
+
+body {
+    background-color: #ffffff;
+}
+
+.checkList {
+    position: fixed;
+    width: 520px;
+    height: 320px;
+    top: 45%;
+    left: 50%;
+    margin-top: -160px;
+    margin-left: -260px;
+    background-color: #ffffff;
+    border: solid 1px #cecece;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px #e2e2e2;
+}
+
+.checkList>div {
+    height: 35px;
+    line-height: 35px;
+}
+
+.checkList>.title {
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.checkList>.title>span {
+    color: #35b1f1;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkList>.checkItem {
+    width: 300px;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.checkList>.checkItem.passed::after {
+    margin-left: 5px;
+    content: url(/static/img/v2/public/icon-passed.png);
+    vertical-align: middle;
+}
+
+.checkList>.checkItem.failed::after {
+    margin-left: 5px;
+    content: url(/static/img/v2/public/icon-failed.png);
+    vertical-align: middle;
+}
+
+.checkList>.button {
+    margin-top: 40px;
+}
+
+/* ------ 环境检查页面样式 End ------ */

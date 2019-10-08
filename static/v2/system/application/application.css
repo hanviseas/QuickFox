@@ -1,0 +1,113 @@
+@CHARSET "UTF-8";
+/* ------ 应用列表样式 Begin ------ */
+
+.newApplication {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.newApplication>span {
+    color: #35b1f1;
+    font-weight: bold;
+}
+
+.newApplication>span::before {
+    margin-right: 10px;
+    content: url(/static/img/v2/public/icon-add.png);
+    vertical-align: middle;
+}
+
+.application {
+    height: 35px;
+    margin-top: -1px;
+    cursor: pointer;
+    line-height: 35px;
+    border: solid 1px #dcdcdc;
+}
+
+.application.focused>div>span {
+    color: #35b1f1;
+}
+
+.application.focused>div>div>span {
+    color: #35b1f1;
+}
+
+.application.focused .optionCol {
+    display: block;
+}
+
+.application.new>div>span {
+    color: #f1a835;
+}
+
+.application.new>div>div>span {
+    color: #f1a835;
+}
+
+.application>div {
+    float: left;
+}
+
+.application>div>span {
+    padding: 0px 15px;
+}
+
+.application>.idCol {
+    width: 10%;
+}
+
+.application>.nameCol {
+    width: 40%;
+}
+
+.application>.secretCol {
+    width: 40%;
+}
+
+.application>.optionCol {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #ffffff;
+}
+
+.application>.optionCol>div {
+    display: inline-block;
+    padding: 9px 10px;
+    vertical-align: middle;
+}
+
+.application>.optionCol>div img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.head {
+    height: 40px;
+    line-height: 40px;
+    background-color: #35b1f1;
+}
+
+.head>div>span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.head .arrowUp>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-up.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+.head .arrowDown>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-down.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+/* ------ 空间列表样式 End ------ */

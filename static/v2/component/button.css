@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+/* ------ Button组件样式 Begin ------ */
+
+.button {
+    cursor: pointer;
+    text-align: center;
+    background-color: #35b1f1;
+    border: solid 1px #dcdcdc;
+}
+
+.button span {
+    color: #ffffff;
+}
+
+.button.green {
+    background-color: #83b844;
+}
+
+.button.error {
+    background-color: #d63636;
+}
+
+.button.disability {
+    background-color: #9e9e9e;
+}
+
+/* ------ Button组件样式 End ------ */

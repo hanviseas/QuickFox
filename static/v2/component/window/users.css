@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+/* ------ Users组件样式 Begin ------ */
+
+.search {
+    margin-bottom: 15px;
+}
+
+.user {
+    width: 350px;
+    height: 40px;
+    padding: 0px 25px 0px 15px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 40px;
+}
+
+.user.focused>div>span {
+    color: #35b1f1;
+}
+
+.user>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user>img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+    border: solid 1px #cecece;
+    border-radius: 50%;
+}
+
+/* ------ Users组件样式 End ------ */

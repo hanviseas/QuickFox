@@ -1,0 +1,183 @@
+@CHARSET "UTF-8";
+/* ------ 报告窗口样式 Begin ------ */
+
+.recordList {
+    height: 380px;
+    overflow: auto;
+}
+
+.record {
+    height: 30px;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+.record::before {
+    margin-right: 8px;
+    content: url(/static/img/v2/start/icon-folded.png);
+    vertical-align: middle;
+}
+
+.record.focused>span {
+    color: #35b1f1;
+}
+
+.record.selected::before {
+    margin-right: 8px;
+    content: url(/static/img/v2/start/icon-unfolded.png);
+    vertical-align: middle;
+}
+
+.record.selected>span {
+    color: #35b1f1;
+    font-weight: bold;
+}
+
+.record.passed::after {
+    margin-left: 5px;
+    content: url(/static/img/v2/start/icon-passed.png);
+    vertical-align: middle;
+}
+
+.record.failed::after {
+    margin-left: 5px;
+    content: url(/static/img/v2/start/icon-failed.png);
+    vertical-align: middle;
+}
+
+.record>span {
+    display: inline-block;
+    max-width: calc(100% - 60px);
+    vertical-align: middle;
+}
+
+.caseRecordList {
+    padding: 5px 0px 15px 15px;
+    border-top: solid 1px #dcdcdc;
+}
+
+.caseRecord {
+    height: 30px;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+.caseRecord::before {
+    margin-right: 8px;
+    content: url(/static/img/v2/start/icon-folded.png);
+    vertical-align: middle;
+}
+
+.caseRecord.selected::before {
+    margin-right: 8px;
+    content: url(/static/img/v2/start/icon-unfolded2.png);
+    vertical-align: middle;
+}
+
+.caseRecord>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.caseRecord>div:first-child {
+    max-width: calc(100% - 80px);
+    margin-right: 10px;
+}
+
+.caseRecord>div.option {
+    display: none;
+    margin-left: 10px;
+}
+
+.caseRecord.focused>div.option {
+    display: inline-block;
+}
+
+.caseRecord>div.passed>span::after {
+    margin-left: 5px;
+    content: url(/static/img/v2/start/icon-passed.png);
+    vertical-align: middle;
+}
+
+.caseRecord>div.failed>span::after {
+    margin-left: 5px;
+    content: url(/static/img/v2/start/icon-failed.png);
+    vertical-align: middle;
+}
+
+.stepRecordList {
+    padding: 0px 0px 15px 20px;
+}
+
+.stepRecord {
+    height: 30px;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+.stepRecord.requestStep::before {
+    margin-right: 8px;
+    content: url(/static/img/v2/start/icon-request.png);
+    vertical-align: middle;
+}
+
+.stepRecord.dataStep::before {
+    margin-right: 8px;
+    content: url(/static/img/v2/start/icon-data.png);
+    vertical-align: middle;
+}
+
+.stepRecord.checkStep::before {
+    margin-right: 8px;
+    content: url(/static/img/v2/start/icon-check.png);
+    vertical-align: middle;
+}
+
+.stepRecord.timeStep::before {
+    margin-right: 8px;
+    content: url(/static/img/v2/start/icon-time.png);
+    vertical-align: middle;
+}
+
+.stepRecord.passed::after {
+    margin-left: 5px;
+    content: url(/static/img/v2/start/icon-passed.png);
+    vertical-align: middle;
+}
+
+.stepRecord.failed::after {
+    margin-left: 5px;
+    content: url(/static/img/v2/start/icon-failed.png);
+    vertical-align: middle;
+}
+
+.stepRecord>span {
+    display: inline-block;
+    max-width: calc(100% - 60px);
+    vertical-align: middle;
+}
+
+.recordDetail {
+    margin: 5px 15px 5px 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    line-height: 20px;
+    background-color: #daeef9;
+    border: solid 1px #dcdcdc;
+}
+
+.recordDetail>div {
+    margin: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.recordDetail>div.detailTitle {
+    line-height: 30px;
+}
+
+.recordDetail>div.detailTitle>span {
+    font-weight: bold;
+}
+
+/* ------ 报告窗口样式 End ------ */

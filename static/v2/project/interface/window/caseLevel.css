@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+/* ------ 用例等级窗口样式 Begin ------ */
+
+.level {
+    text-align: center;
+}
+
+.level>img {
+    display: inline-block;
+    margin: 0px 30px;
+    cursor: pointer;
+}
+
+.helper {
+    text-align: center;
+}
+
+.helper>span {
+    padding: 30px;
+}
+
+/* ------ 用例等级窗口样式 End ------ */

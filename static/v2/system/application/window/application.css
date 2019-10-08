@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+/* ------ 应用窗口样式 Begin ------ */
+
+.secret>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.secret>div:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    margin-left: -1px;
+    cursor: pointer;
+    border: solid 1px #dcdcdc;
+}
+
+/* ------ 应用窗口样式 End ------ */

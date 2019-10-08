@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+/* ------ iframe样式 Begin ------ */
+
+.iframe {
+    width: 100%;
+    height: 50000px;
+}
+
+/* ------ iframe样式 End ------ */

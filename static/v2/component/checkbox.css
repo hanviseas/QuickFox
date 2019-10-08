@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+/* ------ Checkbox组件样式 Begin ------ */
+
+.options>div {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.options>div>div {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+.options>div>div>img {
+    margin-right: 10px;
+}
+
+.options>div>div.focused>span {
+    color: #35b1f1;
+}
+
+/* ------ Checkbox组件样式 End ------ */

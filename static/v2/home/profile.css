@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+/* ------ 个人页面样式 Begin ------ */
+
+.userInfo>div {
+    height: 50px;
+    line-height: 50px;
+}
+
+.userInfo>div>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.userInfo>div>div:first-child {
+    width: 50px;
+    margin-right: 30px;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.userInfo>div>div:first-child>span {
+    font-weight: bold;
+}
+
+.userInfo>div>div:nth-child(2)>span {
+    margin-left: 5px;
+}
+
+.userInfo>div>div>img {
+    border: solid 1px #dcdcdc;
+    border-radius: 50%;
+}
+
+.userInfo>.avatar {
+    margin-bottom: 15px;
+}
+
+.button {
+    margin: 20px 0px 60px 80px;
+    text-align: left;
+}
+
+.button>div {
+    display: inline-block;
+}
+
+/* ------ 个人页面样式 End ------ */

@@ -1,0 +1,210 @@
+@CHARSET "UTF-8";
+/* ------ 接口列表样式 Begin ------ */
+
+.statistics>div {
+    margin-bottom: 30px;
+    text-align: center;
+    border: solid 1px #cecece;
+}
+
+.statistics>div>div:first-child {
+    margin-top: 10px;
+}
+
+.statistics>div>div:nth-child(2)>span {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.statistics>.itemCount {
+    float: left;
+    width: 29%;
+    border-top: solid 5px #f2b606;
+}
+
+.statistics>.itemCount>div:nth-child(2)>span {
+    color: #f2b606;
+}
+
+.statistics>.caseCount {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+    border-top: solid 5px #dd1c5d;
+}
+
+.statistics>.caseCount>div:nth-child(2)>span {
+    color: #dd1c5d;
+}
+
+.statistics>.rateCount {
+    float: right;
+    width: 30%;
+    border-top: solid 5px #83b844;
+}
+
+.statistics>.rateCount>div:nth-child(2)>span {
+    color: #83b844;
+}
+
+.newItem {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.newItem>span {
+    color: #35b1f1;
+    font-weight: bold;
+}
+
+.newItem>span::before {
+    margin-right: 10px;
+    content: url(/static/img/v2/public/icon-add.png);
+    vertical-align: middle;
+}
+
+.item {
+    height: 35px;
+    margin-top: -1px;
+    cursor: pointer;
+    line-height: 35px;
+    border: solid 1px #dcdcdc;
+}
+
+.item.focused>div>span {
+    color: #35b1f1;
+}
+
+.item.focused>div>div>span {
+    color: #35b1f1;
+}
+
+.item.focused .optionCol {
+    display: block;
+}
+
+.item.selected {
+    background-color: #e4f6ff;
+}
+
+.item.selected .optionCol {
+    display: block;
+    background-color: #e4f6ff;
+}
+
+.item.selected>div>span {
+    color: #35b1f1;
+    font-weight: bold;
+}
+
+.item.new>div>span {
+    color: #f1a835;
+}
+
+.item.new>div>div>span {
+    color: #f1a835;
+}
+
+.item.successive>.ownerCol>div>span {
+    color: #c5c5c5;
+}
+
+.item>div {
+    float: left;
+}
+
+.item>div>span {
+    padding: 0px 15px;
+}
+
+.item>.idCol {
+    width: 10%;
+}
+
+.item>.nameCol {
+    width: 20%;
+}
+
+.item>.urlCol {
+    width: 40%;
+}
+
+.item>.ownerCol {
+    width: 20%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.item>.ownerCol>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.item>.ownerCol>img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+    border: solid 1px #cecece;
+    border-radius: 50%;
+}
+
+.item>.ownerCol>div {
+    width: calc(100% - 40px);
+}
+
+.item>.optionCol {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #ffffff;
+}
+
+.item>.optionCol>div {
+    display: inline-block;
+    padding: 9px 10px;
+    vertical-align: middle;
+}
+
+.item>.optionCol>div img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.head {
+    height: 40px;
+    line-height: 40px;
+    background-color: #35b1f1;
+}
+
+.head>div>span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.head .arrowUp>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-up.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+.head .arrowDown>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-down.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+.caseList {
+    margin-top: -1px;
+    border: solid 1px #dcdcdc;
+}
+
+.caseList>div {
+    padding: 20px;
+}
+
+/* ------ 接口列表样式 End ------ */

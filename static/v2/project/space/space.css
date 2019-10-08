@@ -1,0 +1,143 @@
+@CHARSET "UTF-8";
+/* ------ 空间列表样式 Begin ------ */
+
+.newSpace {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.newSpace>span {
+    color: #35b1f1;
+    font-weight: bold;
+}
+
+.newSpace>span::before {
+    margin-right: 10px;
+    content: url(/static/img/v2/public/icon-add.png);
+    vertical-align: middle;
+}
+
+.space {
+    height: 35px;
+    margin-top: -1px;
+    cursor: pointer;
+    line-height: 35px;
+    border: solid 1px #dcdcdc;
+}
+
+.space.focused>div>span {
+    color: #35b1f1;
+}
+
+.space.focused>div>div>span {
+    color: #35b1f1;
+}
+
+.space.focused .optionCol {
+    display: block;
+}
+
+.space.new>div>span {
+    color: #f1a835;
+}
+
+.space.new>div>div>span {
+    color: #f1a835;
+}
+
+.space.locked {
+    height: 36px;
+    background-color: #f1f1f1;
+}
+
+.space.locked>.nameCol>span::after {
+    margin-left: 5px;
+    content: url(/static/img/v2/public/icon-lock.png);
+    vertical-align: middle;
+}
+
+.space>div {
+    float: left;
+}
+
+.space>div>span {
+    padding: 0px 15px;
+}
+
+.space>.idCol {
+    width: 10%;
+}
+
+.space>.nameCol {
+    width: 40%;
+}
+
+.space>.ownerCol {
+    width: 40%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.space>.ownerCol>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.space>.ownerCol>img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+    border: solid 1px #cecece;
+    border-radius: 50%;
+}
+
+.space>.ownerCol>div {
+    width: calc(100% - 40px);
+}
+
+.space>.optionCol {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #ffffff;
+}
+
+.space>.optionCol>div {
+    display: inline-block;
+    padding: 9px 10px;
+    vertical-align: middle;
+}
+
+.space>.optionCol>div img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.head {
+    height: 40px;
+    line-height: 40px;
+    background-color: #35b1f1;
+}
+
+.head>div>span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.head .arrowUp>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-up.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+.head .arrowDown>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-down.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+/* ------ 空间列表样式 End ------ */

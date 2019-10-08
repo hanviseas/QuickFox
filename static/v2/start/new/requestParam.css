@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+/* ------ 请求参数样式 Begin ------ */
+
+.requestOption>div {
+    margin: 20px 0px;
+    line-height: 30px;
+}
+
+.requestOption>div>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.field.focused .optionCol {
+    display: inline-block;
+}
+
+.field>.optionCol {
+    display: none;
+    margin-left: 10px;
+}
+
+.field>.optionCol>div {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.field>.optionCol>div img {
+    vertical-align: middle;
+}
+
+/* ------ 请求参数样式 End ------ */

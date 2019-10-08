@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+/* ------ 空间模块窗口样式 Begin ------ */
+
+.newModule {
+    height: 50px;
+    line-height: 50px;
+}
+
+.newModule>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.add {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: solid 1px #dcdcdc;
+    border-left: none;
+}
+
+.module {
+    height: 35px;
+    margin: -1px 35px 0px 35px;
+    cursor: pointer;
+    text-align: left;
+    line-height: 35px;
+    border-bottom: solid 1px #dcdcdc;
+}
+
+.module.focused>div>span {
+    color: #35b1f1;
+}
+
+.module.focused .optionCol {
+    display: block;
+}
+
+.module>div {
+    float: left;
+}
+
+.module>div>span {
+    padding: 0px 15px;
+}
+
+.module>.idCol {
+    width: 12%;
+}
+
+.module>.nameCol {
+    width: 45%;
+}
+
+.module>.nameCol>div {
+    padding: 0px 15px;
+}
+
+.module>.ownerCol {
+    width: 33%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.module>.ownerCol>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.module>.ownerCol>img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+    border: solid 1px #cecece;
+    border-radius: 50%;
+}
+
+.module>.ownerCol>div {
+    width: calc(100% - 40px);
+}
+
+.module>.optionCol {
+    display: none;
+    float: right;
+}
+
+.module>.optionCol>div {
+    display: inline-block;
+    padding: 9px 10px;
+    vertical-align: middle;
+}
+
+.module>.optionCol>div img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.head {
+    background-color: #d5dcdf;
+}
+
+.head>div>span {
+    color: #898989;
+}
+
+/* ------ 空间模块窗口样式 End ------ */

@@ -1,0 +1,65 @@
+@CHARSET "UTF-8";
+/* ------ 配置页面样式 Begin ------ */
+
+.board {
+    position: fixed;
+    width: 520px;
+    height: 580px;
+    top: 45%;
+    left: 50%;
+    margin-top: -290px;
+    margin-left: -260px;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 1px #cecece;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px #e2e2e2;
+}
+
+.board>div {
+    padding: 60px;
+}
+
+.board>div>div {
+    height: 70px;
+}
+
+.board>div>div:first-child {
+    height: 20px;
+    margin-bottom: 60px;
+}
+
+.board>div>div:first-child>span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.board>div>.message {
+    position: absolute;
+    width: 400px;
+    height: 15px;
+    top: 105px;
+    line-height: 15px;
+}
+
+.board>div>.successMessage>span {
+    color: #35b1f1;
+}
+
+.board>div>.successMessage>span::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-success-message.png");
+    vertical-align: middle;
+}
+
+.board>div>.errorMessage>span {
+    color: #dd1c5d;
+}
+
+.board>div>.errorMessage>span::before {
+    margin-right: 10px;
+    content: url("/static/img/v2/public/icon-error-message.png");
+    vertical-align: middle;
+}
+
+/* ------ 配置页面样式 End ------ */

@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+/* ------ 全局设置样式 Begin ------ */
+
+.systemInfo>div {
+    height: 50px;
+    line-height: 50px;
+}
+
+.systemInfo>div>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.systemInfo>div>div:first-child {
+    width: 90px;
+    margin-right: 30px;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.systemInfo>div>div:nth-child(5) {
+    margin: 0px 20px;
+}
+
+.defaultOwner {
+    cursor: pointer;
+}
+
+.defaultOwner>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.defaultOwner>img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+    border: solid 1px #cecece;
+    border-radius: 50%;
+}
+
+.defaultOwner>div>span {
+    width: 400px;
+}
+
+.whiteSpace {
+    height: 30px;
+}
+
+.button {
+    margin: 20px 0px 60px 120px;
+    text-align: left;
+}
+
+.button>div {
+    display: inline-block;
+}
+
+/* ------ 全局设置样式 End ------ */

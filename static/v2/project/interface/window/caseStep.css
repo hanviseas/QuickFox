@@ -1,0 +1,334 @@
+@CHARSET "UTF-8";
+/* ------ 用例步骤窗口样式 Begin ------ */
+
+.content {
+    text-align: center;
+}
+
+.content>div {
+    display: inline-block;
+    width: 1024px;
+}
+
+@media screen and (max-width: 1200px) {
+    .content>div {
+        width: 90%;
+    }
+}
+
+.console {
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.environment {
+    float: left;
+}
+
+.controller {
+    float: left;
+    margin-left: 30px;
+}
+
+.controller>div {
+    display: inline-block;
+    height: 30px;
+    margin-left: -1px;
+    cursor: pointer;
+    line-height: 30px;
+    border: solid 1px #cecece;
+}
+
+.viewMode {
+    float: right;
+}
+
+.viewMode>div {
+    display: inline-block;
+    height: 30px;
+    margin-left: -1px;
+    cursor: pointer;
+    line-height: 30px;
+    border: solid 1px #cecece;
+}
+
+.viewMode>div>span {
+    padding: 15px;
+    font-size: 14px;
+}
+
+.testModeButton>span::before {
+    margin-right: 10px;
+    content: url(/static/img/v2/interface/icon-mode-test.png);
+    vertical-align: middle;
+}
+
+.testModeButton.selected {
+    background-color: #35b1f1;
+}
+
+.testModeButton.selected>span {
+    color: #ffffff;
+}
+
+.testModeButton.selected>span::before {
+    content: url(/static/img/v2/interface/icon-mode-test-actived.png);
+}
+
+.editModeButton>span::before {
+    margin-right: 10px;
+    content: url(/static/img/v2/interface/icon-mode-edit.png);
+    vertical-align: middle;
+}
+
+.editModeButton.selected {
+    background-color: #35b1f1;
+}
+
+.editModeButton.selected>span {
+    color: #ffffff;
+}
+
+.editModeButton.selected>span::before {
+    content: url(/static/img/v2/interface/icon-mode-edit-actived.png);
+}
+
+.step {
+    height: 35px;
+    margin: 10px 0px;
+    line-height: 35px;
+    background-color: #ffffff;
+}
+
+.step.dragging {
+    opacity: 0;
+}
+
+.step.removable>.optionCol {
+    cursor: pointer;
+}
+
+.step>div {
+    float: left;
+    border: solid 1px #cecece;
+}
+
+.step>.indexCol {
+    width: 35px;
+    cursor: move;
+    background-color: #35b1f1;
+}
+
+.step>.indexCol>span {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.step>.typeCol {
+    width: 150px;
+    margin-left: -1px;
+    cursor: pointer;
+}
+
+.step>.nameCol {
+    width: calc(100% - 225px);
+    margin-left: -1px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.step>.nameCol>span {
+    padding: 15px;
+}
+
+.step>.optionCol {
+    width: 35px;
+    height: 35px;
+    margin-left: -1px;
+}
+
+.step>.optionCol>img {
+    margin-top: 2px;
+}
+
+.testResponse {
+    margin-top: -9px;
+    margin-bottom: 15px;
+    border: solid 1px #cecece;
+    border-top: none;
+}
+
+.testResponse.height1 {
+    width: 100px;
+    height: 15px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 6px;
+}
+
+.testResponse.height1>.detail {
+    display: none;
+}
+
+.testResponse.height2 {
+    height: 200px;
+}
+
+.testResponse.height2>.more {
+    display: none;
+}
+
+.testResponse.height3 {
+    height: 400px;
+}
+
+.testResponse.height3>.more {
+    display: none;
+}
+
+.testResponse.height4 {
+    height: 600px;
+}
+
+.testResponse.height4>.more {
+    display: none;
+}
+
+.testResponse.height4 .slideDown {
+    display: none;
+}
+
+.testResponse>.more {
+    height: 15px;
+    background-color: #35b1f1;
+}
+
+.testResponse>.more>span {
+    color: #ffffff;
+}
+
+.testResponse>.detail {
+    height: calc(100% - 1px);
+}
+
+.testResponse>.detail>div {
+    float: left;
+    height: 100%;
+}
+
+.testResponse>.detail>div:first-child {
+    width: 35px;
+    border-right: solid 1px #cecece;
+}
+
+.testResponse>.detail>div:first-child>div {
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    border-bottom: solid 1px #cecece;
+}
+
+.testResponse>.detail>div:first-child>div.selected {
+    border-right: solid 1px #ffffff;
+}
+
+.testResponse>.detail>div:nth-child(2) {
+    width: calc(100% - 70px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.testResponse>.detail>div:nth-child(2)>div {
+    margin: 15px;
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.testResponse>.detail>div:nth-child(2) .responseTitle {
+    height: 30px;
+    line-height: 30px;
+}
+
+.testResponse>.detail>div:nth-child(2) .responseTitle>span {
+    color: #35b1f1;
+    font-weight: bold;
+}
+
+.testResponse>.detail>div:nth-child(2) .responseCode {
+    margin-left: 15px;
+    color: #f2b606;
+    font-weight: bold;
+}
+
+.testResponse>.detail>div:nth-child(2) .responseTime {
+    margin-left: 15px;
+    color: #83b844;
+    font-weight: bold;
+}
+
+.testResponse>.detail>div:nth-child(2) .testPass>span {
+    color: #83b844;
+    font-weight: bold;
+}
+
+.testResponse>.detail>div:nth-child(2) .testFail>span {
+    color: #dd1c5d;
+    font-weight: bold;
+}
+
+.testResponse>.detail>div:last-child {
+    width: 30px;
+}
+
+.testResponse>.detail .slideUp {
+    opacity: 0.7;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.testResponse>.detail .slideDown {
+    opacity: 0.7;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 5px;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.dragStep {
+    position: fixed;
+    pointer-events: none;
+    opacity: 0.7;
+    z-index: 910;
+    top: 0px;
+    left: 0px;
+    background-color: #f0f0f0;
+}
+
+.dragStep span {
+    color: #35b1f1;
+}
+
+.space {
+    height: 30px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: dotted 1px #cecece;
+}
+
+.space.focused {
+    border: dotted 1px #35b1f1;
+}
+
+.space>img {
+    margin-top: 5px;
+}
+
+/* ------ 用例步骤窗口样式 End ------ */

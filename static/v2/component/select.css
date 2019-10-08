@@ -1,0 +1,90 @@
+@CHARSET "UTF-8";
+/* ------ Select组件样式 Begin ------ */
+
+.title {
+    line-height: 40px;
+}
+
+.arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0px;
+    background-image: url('/static/img/v2/component/arrow-down.png');
+}
+
+.currentOption {
+    padding: 0px 15px;
+    cursor: pointer;
+    text-align: left;
+    border: solid 1px #dcdcdc;
+}
+
+.currentOption.focused {
+    border-color: #35b1f1;
+}
+
+.currentOption.required {
+    border-color: #e38b8b;
+}
+
+.currentOption.disabled {
+    background-color: #f1f1f1;
+}
+
+.options {
+    position: absolute;
+    max-height: 302px;
+    z-index: 50;
+    overflow-y: scroll;
+    text-align: left;
+    background-color: #ffffff;
+    border: solid 1px #dcdcdc;
+}
+
+.options.folded {
+    display: none;
+}
+
+.options::-webkit-scrollbar {
+    width: 8px;
+}
+
+.options::-webkit-scrollbar-track {
+    background-color: #eeeeee;
+    border-radius: 2px;
+}
+
+.options::-webkit-scrollbar-thumb {
+    background-color: #cecece;
+    border-radius: 2px;
+}
+
+.options>div {
+    height: 30px;
+    padding: 0px 15px;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+.options>div>span {
+    height: 30px;
+}
+
+.options>div.selected {
+    background-color: #35b1f1;
+}
+
+.options>div.selected>span {
+    color: #ffffff;
+}
+
+.options>div.focused {
+    background-color: #cecece;
+}
+
+.options>div.focused>span {
+    color: #ffffff;
+}
+
+/* ------ Select组件样式 End ------ */

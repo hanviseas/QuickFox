@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+/* ------ 日志列表样式 Begin ------ */
+
+.log {
+    height: 35px;
+    margin-top: -1px;
+    line-height: 35px;
+    border: solid 1px #dcdcdc;
+}
+
+.log>div {
+    float: left;
+}
+
+.log>div>span {
+    padding: 0px 15px;
+}
+
+.log>.idCol {
+    width: 10%;
+}
+
+.log>.sourceCol {
+    width: 15%;
+}
+
+.log>.operatorCol {
+    width: 20%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.log>.operatorCol>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.log>.operatorCol>img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+    border: solid 1px #cecece;
+    border-radius: 50%;
+}
+
+.log>.operatorCol>div {
+    width: calc(100% - 40px);
+}
+
+.log>.actionCol {
+    width: 30%;
+}
+
+
+.log>.timeCol {
+    width: 20%;
+}
+
+.head {
+    height: 40px;
+    line-height: 40px;
+    background-color: #35b1f1;
+}
+
+.head>div>span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.head .arrowUp>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-up.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+.head .arrowDown>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-down.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+/* ------ 日志列表样式 End ------ */

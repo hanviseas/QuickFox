@@ -1,0 +1,115 @@
+@CHARSET "UTF-8";
+/* ------ 用例列表样式 Begin ------ */
+
+.header {
+    height: 50px;
+    line-height: 50px;
+}
+
+.title {
+    float: left;
+}
+
+.title>span>span {
+    padding: 0px 5px;
+    color: #35b1f1;
+    font-weight: bold;
+}
+
+.menu {
+    float: right;
+}
+
+.menu>div {
+    float: right;
+    cursor: pointer;
+}
+
+.menu>.new>span::before {
+    margin-right: 10px;
+    content: url(/static/img/v2/public/icon-add.png);
+    vertical-align: middle;
+}
+
+.menu span {
+    color: #35b1f1;
+    font-weight: bold;
+}
+
+.case {
+    height: 30px;
+    margin-top: -1px;
+    cursor: pointer;
+    line-height: 30px;
+    border: solid #dcdcdc;
+    border-width: 1px 1px 1px 0px;
+}
+
+.case.focused {
+    background-color: #e4f6ff;
+}
+
+.case.new>div>span {
+    color: #f1a835;
+}
+
+.case>div {
+    display: inline-block;
+    margin-left: -1px;
+    vertical-align: middle;
+    border-left: solid 1px #dcdcdc;
+}
+
+.case>div>span {
+    padding: 0px 15px;
+}
+
+.case>.idCol {
+    width: 20%;
+}
+
+.case>.nameCol {
+    width: 50%;
+}
+
+.case>.optionCol {
+    width: 30%;
+    height: 30px;
+    overflow: hidden;
+}
+
+.case>.optionCol>div {
+    display: inline-block;
+    padding: 6px 15px;
+    vertical-align: middle;
+}
+
+.case .iconLevel1::before {
+    margin-right: 10px;
+    content: url('/static/img/v2/interface/icon-level-a.png');
+    vertical-align: middle;
+}
+
+.case .iconLevel2::before {
+    margin-right: 10px;
+    content: url('/static/img/v2/interface/icon-level-b.png');
+    vertical-align: middle;
+}
+
+.case .iconLevel3::before {
+    margin-right: 10px;
+    content: url('/static/img/v2/interface/icon-level-c.png');
+    vertical-align: middle;
+}
+
+.case .iconLevel4::before {
+    margin-right: 10px;
+    content: url('/static/img/v2/interface/icon-level-d.png');
+    vertical-align: middle;
+}
+
+.head>div>span {
+    color: #aeaeae;
+}
+
+/* ------ 用例列表样式 End ------ */

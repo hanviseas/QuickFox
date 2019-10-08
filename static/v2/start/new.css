@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+/* ------ 新的测试样式 Begin ------ */
+
+.whiteSpace {
+    height: 1px;
+}
+
+.requestOption>div {
+    margin: 20px 0px;
+    line-height: 30px;
+}
+
+.requestOption>div>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.requestOption>div img {
+    margin-left: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.viewMode>div {
+    display: inline-block;
+    height: 30px;
+    margin-left: -1px;
+    cursor: pointer;
+    line-height: 30px;
+    border: solid 1px #cecece;
+}
+
+.viewMode>div>span {
+    padding: 15px;
+    font-size: 14px;
+}
+
+.textModeButton.selected {
+    background-color: #35b1f1;
+}
+
+.textModeButton.selected>span {
+    color: #ffffff;
+}
+
+.response {
+    min-height: 300px;
+    max-height: 900px;
+    margin-top: -1px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: solid 1px #dcdcdc;
+}
+
+.response>div {
+    margin: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/* ------ 新的测试样式 End ------ */

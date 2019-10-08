@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+/* ------ 应用接入样式 Begin ------ */
+
+.filter>div {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/* ------ 应用接入样式 End ------ */

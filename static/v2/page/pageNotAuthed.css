@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+/* ------ 403页面样式 Begin ------ */
+
+body {
+    background-color: #ffffff;
+}
+
+.message {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -300px;
+}
+
+/* ------ 403页面样式 End ------ */

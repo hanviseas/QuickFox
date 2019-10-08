@@ -1,0 +1,187 @@
+@CHARSET "UTF-8";
+/* ------ 设置列表样式 Begin ------ */
+
+.newSet {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.newSet>span {
+    color: #35b1f1;
+    font-weight: bold;
+}
+
+.newSet>span::before {
+    margin-right: 10px;
+    content: url(/static/img/v2/public/icon-add.png);
+    vertical-align: middle;
+}
+
+.param {
+    height: 35px;
+    margin-top: -1px;
+    cursor: pointer;
+    line-height: 35px;
+    border: solid 1px #dcdcdc;
+}
+
+.param.focused>div>span {
+    color: #35b1f1;
+}
+
+.param.focused>div>div>span {
+    color: #35b1f1;
+}
+
+.param.focused .optionCol {
+    display: block;
+}
+
+.param.new>div>span {
+    color: #f1a835;
+}
+
+.param.new>div>div>span {
+    color: #f1a835;
+}
+
+.param>div {
+    float: left;
+}
+
+.param>div>span {
+    padding: 0px 15px;
+}
+
+.param>.idCol {
+    width: 10%;
+}
+
+.param>.keywordCol {
+    width: 30%;
+}
+
+.param>.valueCol {
+    width: 30%;
+}
+
+.param>.commentCol {
+    width: 30%;
+}
+
+.param>.optionCol {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #ffffff;
+}
+
+.param>.optionCol>div {
+    display: inline-block;
+    padding: 9px 10px;
+    vertical-align: middle;
+}
+
+.param>.optionCol>div img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.data {
+    height: 35px;
+    margin-top: -1px;
+    cursor: pointer;
+    line-height: 35px;
+    border: solid 1px #dcdcdc;
+}
+
+.data.focused>div>span {
+    color: #35b1f1;
+}
+
+.data.focused>div>div>span {
+    color: #35b1f1;
+}
+
+.data.focused .optionCol {
+    display: block;
+}
+
+.data.new>div>span {
+    color: #f1a835;
+}
+
+.data.new>div>div>span {
+    color: #f1a835;
+}
+
+.data>div {
+    float: left;
+}
+
+.data>div>span {
+    padding: 0px 15px;
+}
+
+.data>.idCol {
+    width: 10%;
+}
+
+.data>.sourceCol {
+    width: 30%;
+}
+
+.data>.keywordCol {
+    width: 30%;
+}
+
+.data>.commentCol {
+    width: 30%;
+}
+
+.data>.optionCol {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #ffffff;
+}
+
+.data>.optionCol>div {
+    display: inline-block;
+    padding: 9px 10px;
+    vertical-align: middle;
+}
+
+.data>.optionCol>div img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.head {
+    height: 40px;
+    line-height: 40px;
+    background-color: #35b1f1;
+}
+
+.head>div>span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.head .arrowUp>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-up.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+.head .arrowDown>span::after {
+    margin-left: 10px;
+    content: url(/static/img/v2/public/icon-arrow-down.png);
+    vertical-align: middle;
+    line-height: 38px;
+}
+
+/* ------ 设置列表样式 End ------ */

@@ -1,0 +1,118 @@
+@CHARSET "UTF-8";
+/* ------ 任务列表样式 Begin ------ */
+
+.newTask {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.newTask>span {
+    color: #35b1f1;
+    font-weight: bold;
+}
+
+.newTask>span::before {
+    margin-right: 10px;
+    content: url(/static/img/v2/public/icon-add.png);
+    vertical-align: middle;
+}
+
+.task {
+    float: left;
+    width: 400px;
+    height: 250px;
+    margin: 0px 30px 30px 0px;
+    cursor: pointer;
+    line-height: 20px;
+    border: solid 1px #dcdcdc;
+    border-radius: 3px;
+}
+
+.task.focused {
+    margin: -5px 30px 35px 0px;
+    border: solid 1px #35b1f1;
+}
+
+.task.focused.locked {
+    border: solid 1px #dd1c5d;
+}
+
+.task.locked>div>.title {
+    background-color: #dd1c5d;
+}
+
+.task.running>div>.title>span::before {
+    display: inline-block;
+    margin: -2px 5px 0px -3px;
+    content: url(/static/img/v2/public/loading.svg);
+    vertical-align: middle;
+}
+
+.task.running>div>.process {
+    display: block;
+}
+
+.task>div>.title {
+    margin-bottom: 10px;
+    line-height: 40px;
+    background-color: #35b1f1;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.task>div>.title>span {
+    display: inline-block;
+    width: 50%;
+    margin: 0px 15px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.task>div>.title>.option {
+    float: right;
+    margin-right: 10px;
+}
+
+.task>div>.title>.option>div {
+    display: inline-block;
+    margin: 5px 0px;
+}
+
+.task>div>.process {
+    display: none;
+    height: 5px;
+    margin: -10px 0px 10px 0px;
+    border-bottom: solid 1px #dcdcdc;
+}
+
+.task>div>.process>div {
+    float: left;
+    width: 1%;
+    height: 5px;
+    background-color: #83b844;
+}
+
+.task>div>.config {
+    line-height: 30px;
+}
+
+.task>div>.config>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.task>div>.config>div>span {
+    margin: 0px 15px;
+}
+
+.task>div>.config>div:first-child {
+    width: 30%;
+}
+
+.task>div>.config>div:nth-child(2) {
+    width: 70%;
+}
+
+/* ------ 任务列表样式 End ------ */
