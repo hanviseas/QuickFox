@@ -52,9 +52,11 @@ export default class CheckEnvironment extends React.Component {
 		return (
 			<div className={checkEnvironmentStyle.checkList}>
 				<div className={checkEnvironmentStyle.title}><span>环境检查</span></div>
-				<div className={`${checkEnvironmentStyle.checkItem} ${databasePassStatusStyle}`}><span>1. 数据库连接················································</span></div>
-				<div className={`${checkEnvironmentStyle.checkItem} ${curlModulePassStatusStyle}`}><span>2. PHP-Curl模块················································</span></div>
-				<div className={`${checkEnvironmentStyle.checkItem} ${socketsModulePassStatusStyle}`}><span>3. PHP-Sockets模块··········································</span></div>
+				<div className={`${checkEnvironmentStyle.checkItem} ${databasePassStatusStyle}`}><span>1. 数据库连接·······································</span></div>
+				<div className={`${checkEnvironmentStyle.checkItem} ${curlModulePassStatusStyle}`}><span>2. PHP-Curl模块·······································</span></div>
+				{/*
+					<div className={`${checkEnvironmentStyle.checkItem} ${socketsModulePassStatusStyle}`}><span>3. PHP-Sockets模块···························</span></div>
+				*/}
 				<div className={checkEnvironmentStyle.button}>
 					<Button size='big' text='返回首页' onClick={() => { window.location.href = '/' }} />
 				</div>

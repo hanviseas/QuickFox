@@ -24,9 +24,9 @@ export default class CaseList extends React.Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
-		this.state = {
+		this.setState({
 			cases: nextProps.cases,
-		};
+		});
 	}
 
 	/**

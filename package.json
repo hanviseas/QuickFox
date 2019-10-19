@@ -1,6 +1,6 @@
 {
   "name": "quickfox",
-  "version": "0.1.1.20191008",
+  "version": "0.1.2.20191019",
   "description": "Automated Api Testing System",
   "main": "webpack.config.js",
   "directories": {
