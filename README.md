@@ -62,11 +62,11 @@ QuickFox 是基于 PHP+MySQL 开发的系统，因此首先需要具备一个基
 1) ${extractor:global}：提取全部文本。
 2) ${extractor:json:a->b;}：提取 JSON 文本中 a->b 的值（b 是 a 的子级，例如 {"a":{"b": "x"}}），注意不要遗漏最后的分号。
 3) ${extractor:xml:/a/b;}：提取 XML 文本中 /a/b 节点的值，"/a/b"可以替换成其他 XPATH 表达式，注意不要遗漏最后的分号。
-4) ${extractor:regexp:e(x)p:m:n;}：提取第 M 个括号的第 N 次正则匹配，注意不要遗漏最后的分号。
+4) ${extractor:regexp:e(x)p:M:N;}：提取第 M 个括号的第 N 次正则匹配，注意不要遗漏最后的分号。
 
 最后一个过滤器可能比较难理解，例如对返回值"Hello World"应用过滤器 ${extractor:regexp:o(.):1:2;}，则匹配的是字符"r"，因为正则表达式的含义是跟随在 o 之后的任意字符，而过滤器的含义是第二次符合条件的匹配。
 
-另个一个难以理解的是 ${extractor:global}，为什么会需要这样一个看似无用的过滤器？因为这些过滤器表达式，不单可用于前、后置过滤器中，也可以填写在接口 URL、用例参数和请求头、存储查询语句中，用于替换指定文本。例如前置提到的四步闭环，步骤 2) 的 URL 可以写为 http://www.xxx.com/user/3/?token=${extractor:json:user->token;}，如此便可在请求中带入上一步得到的令牌。
+另个一个难以理解的是 ${extractor:global}，为什么会需要这样一个看似无用的过滤器？因为这些过滤器表达式，不单可用于前、后置过滤器中，也可以填写在接口 URL、用例参数和请求头、存储查询语句中，用于替换指定文本。例如前置提到的四步闭环，步骤 2) 的 URL 可以写为 http://www.xxx.com/user/3/?token=${extractor:json:user->token;} ，如此便可在请求中带入上一步得到的令牌。
 
 未完待续 >>
 
