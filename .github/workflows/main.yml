@@ -1,0 +1,7 @@
+- name: PHP Releases
+  # You may pin to the exact commit or the version.
+  # uses: tighten/phpreleases-action@da8afcef64cc03aea5d29a1dbb764b7c65528005
+  uses: tighten/phpreleases-action@v1
+  with:
+    # Add specific versions to the matrix array
+    releases: # optional
